@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChatSpace</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora:wght@500&family=Mukta&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main>
+        <header>
+            <div class="title">
+                <img class="logo"  src="/icons/icons8-chat-30.png">
+                <h1 class="titlehead">ChatSpace</h1>
+            </div>
+            <button class="hambut" onclick="show_hide()" type="button">
+                <img class="hambutt" src="/icons/icons8-hamburger-32.png" alt="">
+            </button>
+        </header>
+
+<div class="container">
+    <div class="users-window">
+        <div class="users-head">
+            <h3>People</h3>
+            <h4>3</h4>
+         </div>
+        <div class="users-list">
+                <p>Anju</p>
+                <p>Gaurav</p>
+                <p>Shreya</p>
+        </div>
+    </div>
+    <div class="chat-window">
+        <div class="chats">
+            <div class="user-join">
+                <p><b>Anju</b> joined the chat</p>
+            </div>
+            <div class="user-join">
+                <p><b>Gaurav</b> joined the chat</p>
+            </div>
+            <div class="user-join">
+                <p><b>Shreya</b> joined the chat</p>
+            </div>
+            <div class="message incoming" >
+                <h5>Anju</h5>
+                <p>Hello Gaurav</p>
+            </div>
+            <div class="message incoming" >
+                <h5>Shreya</h5>
+                <p>Welcome Anju</p>
+            </div>
+            <div class="message outgoing">
+                <h5>Gaurav</h5>
+                <p>Hey Anju</p>
+            </div>
+        </div>
+        <div class="user-input">
+            <input class="send-msg"  type="text"placeholder="Type your message....">
+            <button class="send-btn">SEND</button>
+        </div>
+    </div>
+</div>
+    </main>
+    <script >
+        var uwindow=document.querySelector('.users-window');
+       
+        function show_hide(){
+            if(uwindow.style.display=="block"){
+                uwindow.style.display="none";
+            }
+            else{
+                uwindow.style.display="block";
+            }
+        }
+    </script>
+</body>
+</html>
